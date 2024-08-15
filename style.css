@@ -1,0 +1,40 @@
+:root{
+    --bg_color : #222831;
+}
+
+body{
+    background-color: var(--bg_color);
+}
+#container{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    border-radius: 10px;
+    background-color: #44556e;
+}
+#name{
+    color: white;
+    height: 100%;
+}
+#Download{
+    background-color: #333840;
+    width: 160px;
+    height: 30px;
+    /* margin-left: 0%; */
+    border-radius: 6px;
+}
+
+#work{
+    margin-top: 10px;
+    background-color: #00adb5;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
