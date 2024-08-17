@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bg_color : '#222831',
+                blue : '#00adb5',
+                header_color : '#44556e',
+                content_bg : '#333840'
+              },
+            }
+        }
+    }
+    </script>
+</head>
+<body class="bg-bg_color">
+    <div class="mx-[10%] pt-6" id="container">
+        <header class="flex justify-between px-2  items-center h-16 rounded-lg bg-header_color">
+            <!-- <div><h3 id="name" class="text-3xl p-0 h-0.75">Darshan Choudhary</h3></div> -->
+            <div class="w-6/12 justify-evenly flex text-white">
+                <h4 id="header" class="inline-block">Home</h4>
+                <h4 id="header" class="inline-block">About Me</h4>
+                <h4 id="header" class="inline-block">Projects</h4>
+                <h4 id="header" class="inline-block">Contact</h4>
+
+            </div>
+        </header>
+        <br>
+        <main class=" px-2  rounded-lg bg-content_bg"><br>
+            <h1 class="text-4xl text-white ml-16"><b>SoundWay</b></h1>
+            <button class="bg-blue p-1 px-3 text-white rounded-lg ml-16 mt-2">Python</button>
+            <button class="bg-blue p-1 px-3 text-white rounded-lg ml-4 mt-2">Flask</button>
+            <button class="bg-blue p-1 px-3 text-white rounded-lg ml-4 mt-2">Javascript</button>
+            <button class="bg-blue p-1 px-3 text-white rounded-lg ml-4 mt-2">Maptiler</button><br><br>
+            <div id="Content" class="grid grid-cols-2 ml-16 gap-y-8">
+                <div id="video-features">
+                <div id="video" class="bg-white w-11/12 rounded-md h-72"></div><br>
+                <div id="features" class="text-white w-11/12">
+                    <h1><b>Key Features:</b>
+                        <ul class="list-disc ml-4">
+                            <li>Voice-controlled navigation: Navigate seamlessly without touching the screen.</li>
+                            <li>Real-time information: Access weather updates, traffic conditions, and place details..</li>
+                            <li>Route optimization: Find the best possible route based on your preferences..</li>
+                            <li>Map customization: Switch between different map layers to suit your needs.</li>
+                            <li>SOS service: Prioritize user safety with an emergency assistance feature.</li>
+                        </ul></h1>
+                </div>
+                </div>
+                <div id="about-link" class="w-11/12">
+                    <h1 class="text-white">David is a friendly and helpful Voice commanded Virtual Assistant who can assist you with a wide range of tasks. From opening websites and searching for information to engaging in enjoyable conversations and creating files, David is there to make your life easier. He can also access and open files on your device, make changes as needed, and much more. With David by your side, you'll have a reliable companion for all your digital needs.</h1>
+                    <h1 id="link" class="text-blue mt-[2%]"><b class="text-white">Website :</b>  SoundWay</h1>
+                    <h1 id="link" class="text-blue mt-[2%]"><b class="text-white">Github Repository :</b>  SoundWay</h1><br>
+                    <div class="text-white">
+                        <div>
+                            <h1><b>Technical Implementation:</b><br>
+                                <ul class="list-disc">
+                                <li>Python Flask: The web application framework for building the backend.</li>
+                                <li>Maptiler: The mapping service for providing geographical data and map rendering.</li>
+                                <li>JavaScript: For interactive elements and user interface.</li></ul></h1>
+                        </div>
+                        <br>
+                        <div>
+                            <h1><b>Potential Improvements:</b>
+                                <ul class="list-disc">
+                                <li>Enhanced driving experience: Keep hands on the wheel and eyes on the road with voice-guided navigation.</li>
+                                <li>Accessibility for the visually impaired: Provide easy interaction with maps for those with visual challenges.</li>
+                                <li>Literacy-free navigation.</li></ul></h1>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div><br>
+        </main>
+        <br>
+    </div>
+</body>
+</html>
