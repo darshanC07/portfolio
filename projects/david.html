@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bg_color : '#222831',
+                blue : '#00adb5',
+                header_color : '#44556e',
+                content_bg : '#333840'
+              },
+            }
+        }
+    }
+    </script>
+</head>
+<body class="bg-bg_color">
+    <div class="mx-[10%] pt-6" id="container">
+        <header class="flex justify-between px-2  items-center h-16 rounded-lg bg-header_color">
+            <!-- <div><h3 id="name" class="text-3xl p-0 h-0.75">Darshan Choudhary</h3></div> -->
+            <div class="w-6/12 justify-evenly flex text-white">
+                <h4 id="header" class="inline-block">Home</h4>
+                <h4 id="header" class="inline-block">About Me</h4>
+                <h4 id="header" class="inline-block">Projects</h4>
+                <h4 id="header" class="inline-block">Contact</h4>
+
+            </div>
+        </header>
+        <br>
+        <main class=" px-2  rounded-lg bg-content_bg"><br>
+            <h1 class="text-4xl text-white ml-16"><b>DAVID</b> - Virtual Assistant</h1>
+            <button class="bg-blue p-1 px-3 text-white rounded-lg ml-16 mt-2">Python</button>
+            <button class="bg-blue p-1 px-3 text-white rounded-lg ml-4 mt-2">Generative AI</button>
+            <button class="bg-blue p-1 px-3 text-white rounded-lg ml-4 mt-2">Voice Recognition</button><br><br>
+            <div id="Content" class="grid grid-cols-2 ml-16 gap-y-8">
+                <div id="about-link" class="w-11/12">
+                    <h1 class="text-white">David is a friendly and helpful Voice commanded Virtual Assistant who can assist you with a wide range of tasks. From opening websites and searching for information to engaging in enjoyable conversations and creating files, David is there to make your life easier. He can also access and open files on your device, make changes as needed, and much more. With David by your side, you'll have a reliable companion for all your digital needs.</h1>
+                    <h1 id="link" class="text-blue mt-[5%]"><b class="text-white">Github Repository :</b>  David-Virtual-Assistant</h1>
+                </div>
+                <div id="video" class="bg-white w-11/12 rounded-md"></div>
+                <div id="features" class="text-white w-11/12">
+                    <h1><b>Key Features:</b>
+                        <ul class="list-disc ml-4">
+                            <li>Voice Recognition: Accurate voice command recognition for seamless interaction.</li>
+                            <li>Task Automation: Execute various tasks, from opening websites to manipulating files.</li>
+                            <li>Information Retrieval: Access and process information from the web through Google Search.</li>
+                            <li>Natural Language Processing: Engage in informative and engaging conversations with David.</li>
+                            <li>Time Management: Provides accurate time information.</li>
+                        </ul></h1>
+                </div>
+                <div class="text-white">
+                    <div>
+                        <h1><b>Technical Implementation:</b><br>
+                            Programming Language: Python
+                            Libraries: speech_recognition, webbrowser, win32com.client, os, datetime, google.generativeai</h1>
+                    </div>
+                    <br><br>
+                    <div>
+                        <h1><b>Potential Improvements:</b>
+                            <ul class="list-disc">
+                            <li>Expand task automation capabilities to include more complex operations.</li>
+                            <li>Enhance natural language understanding for more nuanced interactions.</li>
+                            <li>Integrate with additional services and platforms for broader functionality.</li></ul></h1>
+                    </div>
+                </div>
+            </div><br>
+        </main>
+        <br>
+    </div>
+</body>
+</html>
