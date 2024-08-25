@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprig_Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bg_color : '#222831',
+                blue : '#00adb5',
+                header_color : '#44556e',
+                content_bg : '#333840'
+              },
+            }
+        }
+    }
+    </script>
+</head>
+<body class="bg-bg_color">
+    <div class="mx-[10%] pt-6" id="container">
+        <header class="flex justify-between px-2  items-center h-16 rounded-lg bg-header_color">
+            <!-- <div><h3 id="name" class="text-3xl p-0 h-0.75">Darshan Choudhary</h3></div> -->
+            <div class="w-6/12 justify-evenly flex text-white">
+                <h4 id="header" class="inline-block">Home</h4>
+                <h4 id="header" class="inline-block">About Me</h4>
+                <h4 id="header" class="inline-block">Projects</h4>
+                <h4 id="header" class="inline-block">Contact</h4>
+
+            </div>
+        </header>
+        <br>
+        <main class=" px-10  rounded-lg bg-content_bg"><br>
+            <h1 class="text-4xl text-white mb-2"><b>MAZE</b> - Sprig Game</h1>
+            <button class="bg-blue p-1 px-3 text-white rounded-lg  mt-2">Jerryscript</button><br><br>
+            <div id="Content" class="grid grid-cols-12 gap-x-6 gap-y-2 ">
+                <div id="video" class="bg-white col-span-6 rounded-md flex justify-center items-center"><video style="object-fit: cover;"><source src="../assets/sprig_MAZE_game.mp4"></video></div>
+                <div id="about-link" class="col-span-6">
+                    <h1 class="text-white">What is your game about?<br>My Game is about a Simple Maze...A maze is a complex network of paths or passages, typically designed as a puzzle or challenge, where the goal is to find a route from the entrance to the exit. Mazes vary widely in complexity and size, often found in games, puzzles, or architectural designs. Also to make the game interesting, I have provided a feature to collect coins. Players can collect coins and at the end, the total coins collected by the player will be displayed.
+                        <br><br>
+                        How do you play your game?<br>The game is very easy to play..Players can start the game by pressing 'k' at starting frame and then pressing WASD to move.press J to reset the level. At the top, there's a coin counter, and at the bottom, there's the current level number.</h1>
+                        <div id="github" class="text-white col-span-6">
+                            <h1 id="link" class="text-blue mt-[5%]"><b class="text-white">Github Repository :</b>  <a href="https://github.com/darshanC07/Sprig_Game">Sprig_game</a></h1>
+                        </div>
+                        <div class="text-white col-span-6" id="game-link">
+                            <div>
+                                <h1 id="link" class="text-blue mt-[5%]"><b class="text-white">Sprig Game link :</b>  <a href="https://sprig.hackclub.com/share/KUcwPORWILYLKxreFdBj">MAZE game</a></h1>
+                            </div>
+                        </div>
+                </div>
+                
+            </div><br><br>
+        </main>
+        <br>
+    </div>
+</body>
+</html>
